@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+:root {
+  --primary-color: darkred;
+  --secondary-color: blue;
+  --tertiary-color: green;
+  --intensity: 0.8;
+}
+
+h3 {
+    font-weight: 800px;
+    font-size: 32px;
+    padding: 5px;
+    margin: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 40%;
+}
+
+p {
+    margin: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+p span {
+    font-size: 28px;
+}
+
+.container {
+  margin: 200px auto;
+  max-width: 1100px;
+  background: #ccc;
+  text-align: center;
+}
+
+.home-page {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 10px;
+  margin: 10px 20px;
+}
+
+.dollar {
+  box-shadow: 0 0 5px 1px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.dollar span {
+    color: var(--tertiary-color);
+}
+
+.naira {
+  box-shadow: 0 0 5px 1px;
+  background-color: var(--tertiary-color);
+  color: #fff;
+}
+
+.naira span {
+    color: var(--secondary-color);
+}
+
+.euro {
+    box-shadow: 0 0 5px 1px;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.euro span {
+    color: var(--primary-color);
+}
+
+.dollar h3 {
+    background: var(--secondary-color);
+}
+
+.naira h3 {
+    background: var(--primary-color);
+}
+
+.euro h3 {
+    background-color: linear-gradient(to left, rgba(var(--primary-color), 0, 0, var(--intensity)));
+}
+
