@@ -20,6 +20,10 @@ a {
   font-weight: bold;
 }
 
+a:hover {
+  color: blue;
+}
+
 ul {
   list-style: none;
 }
@@ -35,7 +39,7 @@ ul {
 
 .first {
   color: #fff;
-  font-size: 28px;
+  font-size: 34px;
 }
 
 .btn {
@@ -48,6 +52,7 @@ ul {
   justify-content: space-evenly;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .button {
@@ -62,78 +67,93 @@ ul {
 
 .text {
   color: #fff;
-  margin: 100px 30px 10px 200px;
+  margin: 100px;
   font-size: 45px;
   font-weight: bolder;
   line-height: 1.2;
 }
 
 .main-menu {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: start;
-    color: #fff;
-    margin: 10px 40px 40px 90px;
-    gap: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  color: #fff;
+  margin: 10px 40px 40px 90px;
+  gap: 50px;
 }
 
 .main {
-    flex: 1;
-    width: 600px;
-    margin-left: 30px;
+  flex: 1;
+  width: 600px;
+  margin-left: 10px;
 }
 
 .menu {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .menu input {
-    padding: 10px;
-    border-radius: 20px;
-    width: 300px;;
+  padding: 10px;
+  border-radius: 20px;
+  width: 300px;
 }
 
 .menu p {
-    text-indent: 20px;
+  text-indent: 20px;
 }
 
-@media(max-width: 768px) {
-    .main-menu {
-        display: flex;
-        flex-direction: column;
-        margin: 10px 20px 10px 20px;
-    }
+@media screen and (max-width: 768px) {
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
 
-    body {
-        padding: 20px;
-    }
-
-    .text {
-      margin: 20px 40px 20px 90px;
-    }
-
-    .menu {
-        margin: 0 auto;
-    }
-
-    .btn {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .home-page {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      justify-content: center;
-      align-items: center;
-    }
-    
-   .first {
+  .btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     text-align: center;
-   }
+  }
 
-   .button {
-    width: 30%
-   }
+  .button {
+    width: 50%;
+  }
+
+  .first {
+    font-size: 70px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+
+  .text {
+    text-align: center;
+    padding: 10px;
+  }
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .main {
+    margin: 30px;
+    padding: 35px;
+    width: 100%;
+  }
+
+  .menu {
+    margin: 30px;
+    padding: 35px;
+    text-align: center;
+    width: 600px;
+  }
+
+  a:hover {
+    color: red;
+  }
 }
